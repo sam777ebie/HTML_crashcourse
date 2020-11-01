@@ -5,9 +5,11 @@
 	<head>
 		<title>Ebie learns HTML :)</title>
 	</head>
-	<body>
-		<!-- Headings -->
 
+	<body>
+		<a href="blog.html">Go to my blog posts</a> <!-- just a link to my other webpage -->
+
+		<!-- Headings -->
 		<h1>Heading one: Here we go with HTML basics!!!</h1>
 		<h2>Heading two</h2>
 		<h3>Heading three</h3>
@@ -16,7 +18,6 @@
 		<h6>Heading six</h6>
 
 		<!-- Paragraphs -->
-
 		<p>
 			Let's try paragraph. Random famous text:
 			<i>Just type "lorem" and hit tab. And it creates the following text:</i>
@@ -36,5 +37,156 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum..
 		</p>
+
+		<!-- Lists, unordered and ordered -->
+		<ul>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ul>
+
+		<ol>
+			<li>List item 1</li>
+			<li>List item 2</li>
+			<li>List item 3</li>
+			<li>List item 4</li>
+		</ol>
+
+		<!-- Table -->
+		<table>
+			<thead>
+				<tr> <!-- table row -->
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>Ebie M Sam</td>
+					<td>sam777ebie@gmail.com</td>
+					<td>37</td>
+				</tr>
+
+				<tr>
+					<td>Albert Einstein</td>
+					<td>einstein@gmail.com</td>
+					<td>99</td>
+				</tr>
+
+				<tr>
+					<td>Salvador Dali</td>
+					<td>dali@gmail.com</td>
+					<td>77</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<br>   <!-- line break for some clarity for next section -->
+		<br>
+		<br>
+
+		<!-- Forms -->
+		<form action="process.php" method="POST"> <!-- some attributes for the server side programming -->
+			<div>
+				<label>First Name</label>
+				<input type="text" name="firstName" placeholder="Enter first name">
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName">
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<label>Email</label>
+				<input type="email" name="email">
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<label>Message</label>
+				<textarea name="message"></textarea>
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<label>Gender</label>
+				<select name="gender">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+			</div>
+
+			<br>
+			<br>
+
+			<div>
+				<label>Age</label>
+				<input type="number" name="age" value="37">
+			</div><br>
+			<br>
+
+			<div>
+				<label>Birthday</label>
+				<input type="date" name="birthday">
+			</div>
+
+			<br>
+
+			<!-- Input button (to submit this sample form) -->
+			<input type="submit" name="submit" value="Submit">
+
+
+		</form>
+
+		<br>
+		<br>
+
+		<!-- we can add Buttons as following. Interaction non-existent since we need to provide other functions to tell what happens on a click -->
+		<button>Click Me</button> 
+
+		<br>
+		<br>
+
+		<!-- Image -->
+		<img src="images/mountain.jpg" alt="My Sample Image" width="500">
+
+		<br>
+		<br>
+
+		<!-- Quotations -->
+		<blockquote cite="www.somesite.com">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</blockquote>
+
+		<br>
+
+		<!-- Abbreviations: showing full word when we hover mouse -->
+		<p>
+			The <abbr title="World Wide Web">WWW</abbr> is awsome
+		</p>
+
+		<br>
+
+
+		<div style="margin-top: 500px"></div>  <!-- Using CSS, just adding some buffer space to scroll on the bootom of webpage -->
 	</body>
 </html>
